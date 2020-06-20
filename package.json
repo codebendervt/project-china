@@ -4,11 +4,14 @@
   "description": "This is the toolchain china that will enable the use of tailwindcss, reactjs and many other uselful tools and technologies that will help with the developing of the toolbox",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel  ./public/index.html",
+    "build": "parcel build ./public/index.html  --public-url ./",
+    "rstart": "react-scripts start"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/devUniversity/project-china.git"
+    "url": "git//git@github.com/devUniversity/project-china.git"
   },
   "keywords": [
     "toolchain",
@@ -22,5 +25,29 @@
     "url": "https://github.com/devUniversity/project-china/issues"
   },
   "homepage": "https://github.com/devUniversity/project-china#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
