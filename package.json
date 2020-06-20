@@ -1,0 +1,26 @@
+{
+  "name": "project-china",
+  "version": "0.0.1",
+  "description": "This is the toolchain china that will enable the use of tailwindcss, reactjs and many other uselful tools and technologies that will help with the developing of the toolbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/devUniversity/project-china.git"
+  },
+  "keywords": [
+    "toolchain",
+    "js",
+    "react",
+    "parcel"
+  ],
+  "author": "Rawk",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/devUniversity/project-china/issues"
+  },
+  "homepage": "https://github.com/devUniversity/project-china#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+}
