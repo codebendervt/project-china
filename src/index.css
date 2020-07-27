@@ -1,5 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,900&display=swap');
+@import '../node_modules/animate.css/source/fading_entrances/fadeIn.css';
+@import '../node_modules/animate.css/source/fading_entrances/fadeInDown.css';
+@import '../node_modules/animate.css/source/fading_exits/fadeOutUp.css';
+@import '../node_modules/animate.css/source/_vars.css';
+@import '../node_modules/animate.css/source/_base.css';
+
 @tailwind base;
 
 @tailwind components;
+
+.html{
+    font-family: 'Montserrat', sans-serif;
+}
+.font-bold{
+    font-family: 'Montserrat', sans-serif;
+}
+.rotate {
+    animation: rotation 2s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 
 @tailwind utilities;

@@ -21,3 +21,7 @@ To get run the project run
 # Using npm
 npm start
 ```
+
+
+# Todo
+Add animate.css
