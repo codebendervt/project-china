@@ -21,6 +21,9 @@ module.exports = {
              '9xl': '7rem',
              '10xl': '8rem',
             }
+    },  fontFamily: {
+      display: ['Montserrat', 'sans-serif'],
+      body: ['Montserrat', 'sans-serif'],
     },
     variants: {},
     plugins: [],

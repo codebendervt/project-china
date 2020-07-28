@@ -13,12 +13,14 @@ import instagram from "../../icons/instagram.svg";
 import menuOriginal from './icons/menu.gif';
 import menuClose from './icons/menuClose.gif';
 import Gallery from '../../core/gallerly';
+import Menu from '../../core/menu';
 
 const ourStory = () => <OurStory></OurStory>;
 const splash = () => <Splash></Splash>;
 const fouroFour = () => <FouroFour></FouroFour>;
 const connect = () => <Connect></Connect>;
 const gallery = () => <Gallery></Gallery>;
+const foodMenu = () => <Menu></Menu>;
 
 function init(initialState) {
   return { property: false, child: splash, counter: 0 };
@@ -45,7 +47,7 @@ function reducer(state, action) {
     case "Gallery":
       return { Title: action.type, child: gallery, counter: 1 };
     case "Menu":
-      return { Title: action.type, child: splash, counter: 1 };
+      return { Title: action.type, child: foodMenu, counter: 1 };
     case "Connect With Us":
       return { Title: action.type, child: connect, counter: 1 };
     case "reset":
@@ -101,7 +103,7 @@ function ClassicAppLayout({ Subtitle = "Home", children, initialState }) {
   };
   return (
     <>
-      <div className="w-full h-16 lg:h-24 bg-white flex  text-2xl z-20 relative">
+      <div className="w-full h-16 lg:h-24 bg-white flex  text-2xl z-20 fixed pin-t">
         <div className="w-1/2 p-2 ">
           <div className={"flex h-full items-center justify-start"}>
             <IconButton

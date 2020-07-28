@@ -23,8 +23,8 @@ function Connect(props) {
   const [isClicked, changeIsClicked] = useReducer(reducer, initialState);
   return (
     <div className=" w-screen h-full lg:h-screen bg-white">
-      <div className="w-full h-32 flex-wrap lg:flex">
-        <div className="p-8 w-full lg:w-1/2 lg:py-6 lg:px-16">
+      <div className="w-full h-32 flex-wrap lg:flex lg:py-32">
+        <div className="p-8 w-full lg:w-1/2 lg:py-6 lg:px-16 ">
           <div className="text-6xl lg:text-8xl w-52 leading-none font-bold">
             Connect <br /> with us
           </div>
