@@ -1,6 +1,5 @@
 import React from "react";
 import ClassicAppLayout from "./components/elements/header";
-import InputControllerExample from "./components/temp/ComponentController";
 import logo from "./icons/logo.svg";
 
 function App() {
