@@ -6,7 +6,11 @@ import checkedClose from "../icons/checkedClose.svg";
 import checkedOriginal from "../icons/checkedOrginal.svg";
 
 // important for controller states
-const initialState = { property: false };
+function init(initialState) {
+  return { property: false};
+};
+
+
 function reducer(state, action) {
   switch (action.type) {
     case "submit":
@@ -19,8 +23,8 @@ function reducer(state, action) {
 }
 //end of controller state
 
-function Connect(props) {
-  const [isClicked, changeIsClicked] = useReducer(reducer, initialState);
+function Connect(initialState) {
+  const [isClicked, changeIsClicked] = useReducer(reducer, initialState,init);
   return (
     <div className=" w-screen h-full lg:h-screen bg-white">
       <div className="w-full h-32 flex-wrap lg:flex lg:py-32">
