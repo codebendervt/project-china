@@ -29,7 +29,7 @@ function Connect(initialState) {
     <div className=" w-screen h-full lg:h-screen bg-white">
       <div className="w-full h-32 flex-wrap lg:flex lg:py-32">
         <div className="p-8 w-full lg:w-1/2 lg:py-6 lg:px-16 ">
-          <div className="text-6xl lg:text-8xl w-52 leading-none font-bold">
+          <div className="text-6xl lg:text-10xl w-52 heading-leading khaya-font-bold">
             Connect <br /> with us
           </div>
         </div>
@@ -50,16 +50,16 @@ function Connect(initialState) {
 
               <div className="w-full flex-wrap py-4 md:py-10 lg:py-10">
                 <div className="flex-wrap w-full py-2">
-                  <div className="title font-bold text-lg lg:text-2xl">
+                  {/* <div className="title font-bold text-lg lg:text-2xl">
                     Lorem Ipsum
-                  </div>
-                  <div className="info flex">
-                    <div className="w-1/2">Lorem ipsum dolor sit </div>
-                    <div className="w-1/2">9am - 4pm</div>
+                  </div> */}
+                  <div className="info flex text-2xl">
+                    <div className="w-2/6">Monday - Friday </div>
+                    <div className="w-4/6 justify-start">8am - 4pm</div>
                   </div>
                 </div>
 
-                <div className="flex-wrap w-full py-2">
+                {/* <div className="flex-wrap w-full py-2">
                   <div className="title font-bold text-lg lg:text-2xl">
                     Lorem Ipsum
                   </div>
@@ -74,7 +74,7 @@ function Connect(initialState) {
                     <div className="w-1/2">Lorem ipsum dolor sit </div>
                     <div className="w-1/2">----</div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -108,16 +108,21 @@ function Connect(initialState) {
                 <div className="bg-red-700 px-2 text-white">Follow Us</div>
               </div>
 
-              <div className="flex-wrap w-full py-2">
+              <div className="justify-center flex w-full">
+              <div className="flex-wrap w-full  py-2">
                 <div className="flex items-end text-xl my-1">
-                  <img className="w-12" src={instagram}></img>
+                  <img className="w-8" src={instagram}></img>
                   <div>@KhayaKitchen</div>
                 </div>
                 <div className="flex items-end text-xl my-1">
-                  <img className="w-12" src={facebook}></img>
+                  <img className="w-8" src={facebook}></img>
                   <div>@KhayaKitchen</div>
                 </div>
               </div>
+            
+              </div>
+            
+            
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3 h-full my-4 lg:my-0">

@@ -23,10 +23,10 @@ function Menu(props) {
 
 
 {/* background image */}
-    <div className=" bg-cover bg-center lg:bg-bottom  h-full md:h-auto md:w-full lg:w-full lg:h-auto lg:relative flex justify-center" style={divStyle}>
-    <div className="max-w-md h-screen items-center justify-center flex text-7xl lg:text-10xl text-white font-bold">
+    <div className="h-full md:h-auto md:w-full lg:w-full lg:h-auto lg:relative flex justify-center menuBackgroundImage" >
+    <div className="max-w-md h-screen items-center justify-center flex text-7xl lg:text-12xl text-white font-bold">
   
-  <div className="">
+  <div className=" khaya-font-bold">
   Menu
   </div>
   
@@ -50,7 +50,7 @@ function Menu(props) {
             // <div className="w-full md:w-1/2 lg:w-1/2 flex h-auto p-2">
             <div className={"row-span-"+menu.Items.length+" col-span-1"}>
             <div className="flex-wrap w-full">
-        <div className="bg-black text-white w-full p-4 text-center text-xl lg:text-2xl font-bold">{menu.Name}</div>
+        <div className="bg-black text-white w-full p-4 text-center text-xl lg:text-xl font-bold">{menu.Name}</div>
         {menu.Items.map((item, i)=>
                  <div className="border-b-2 border-black flex-wrap p-4">
                  <div className="font-semibold text-xl">{item.Name}</div>

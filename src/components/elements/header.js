@@ -23,7 +23,7 @@ const gallery = () => <Gallery></Gallery>;
 const foodMenu = () => <Menu></Menu>;
 
 function init(initialState) {
-  return { property: false, child: splash, counter: 0 };
+  return { property: false, child: foodMenu, counter: 0 };
 }
 
 // important for controller states

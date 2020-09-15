@@ -19,6 +19,51 @@
     animation: rotation 2s infinite linear;
   }
 
+       
+  @font-face {
+    font-family: KhayaExtraBold;
+    src: url('fonts/quincy-extrabold.otf');
+  }
+
+  @font-face {
+    font-family: KhayaBold;
+    src: url('fonts/quincy-black.otf');
+  }
+
+  @font-face {
+    font-family: KhayaLight;
+    src: url('fonts/quincy-light.otf');
+  }
+
+  @font-face {
+    font-family: GmabataMedium;
+    src: url('fonts/default-medium.ttf');
+  }
+  .khaya-font-bold {
+
+    font-family: 'KhayaBold', sans-serif;
+  }
+
+  .khaya-font-light {
+    font-family: 'KhayaLight', sans-serif;
+  }
+  
+
+.khaya-font-ExtraBold {
+  font-family: 'KhayaExtraBold', sans-serif;
+    }
+
+    .Gmabata-font-Medium{
+      font-family: 'GmabataMedium', sans-serif;
+    }
+
+    .heading-leading{
+      line-height: 6rem;
+    }
+
+ 
+
+
   @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -28,5 +73,34 @@
     }
   }
 
+  .menuBackgroundImage{
+    background-image: url('./images/mobileMenuAlt.jpg');
+   
+    background-position: bottom;
+    background-size: cover;
+  }
+
+
+  /* Small (sm) */
+@media (min-width: 640px) { 
+
+}
+
+/* Medium (md) */
+@media (min-width: 768px) { /* ... */ }
+
+/* Large (lg) */
+@media (min-width: 1024px) { 
+  .menuBackgroundImage{
+    background-image: url('./images/menu.jpg');
+  }
+ }
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) { 
+  .menuBackgroundImage{
+    background-image: url('./images/menu.jpg');
+  }
+}
 
 @tailwind utilities;

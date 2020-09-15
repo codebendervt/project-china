@@ -20,8 +20,9 @@ module.exports = {
              '8xl': '6rem',
              '9xl': '7rem',
              '10xl': '8rem',
-            }
-    },  fontFamily: {
+             '11xl': '9rem',
+             '12xl': '15rem',
+            },
       display: ['Montserrat', 'sans-serif'],
       body: ['Montserrat', 'sans-serif'],
     },
