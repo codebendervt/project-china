@@ -8,9 +8,9 @@ function Splash(props) {
   return (
   <div className="w-full h-screen  flex absolute ">
      
-      {/* <div className="w-full justify-center flex">
-          <img className="w-12 rotate" src={logo}></img>
-      </div> */}
+      <div className="w-full lg:w-0 justify-center flex">
+          <img className="w-12 lg:w-0 rotate" src={logo}></img>
+      </div> 
 
         <video autoPlay muted  className="w-0 lg:w-screen lg:h-screen ">
         <source  src={video} type="video/mp4"/>
