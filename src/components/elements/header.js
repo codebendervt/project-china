@@ -94,7 +94,7 @@ function ClassicAppLayout({ Subtitle = "Home", children, initialState }) {
             ))}
           </div>
         </div>
-        <div className="w-full h-32 md:h-48 lg:h-48 bg-red-700 p-6 lg:py-8 lg:px-16 text-white font-bold flex text-sm md:text-lg lg:text-sm  ">
+        <div className="w-full h-auto md:h-48 lg:h-48 bg-red-700 p-6 lg:py-8 lg:px-16 text-white font-bold flex text-sm md:text-lg lg:text-sm  ">
           <div className="flex-wrap">
             <div className=""> 61 Amery Crescent , Summerstrand,</div>
             <div className=""> Port Elizabeth, South Afrrica</div>
