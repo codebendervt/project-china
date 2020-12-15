@@ -19,69 +19,77 @@ const mobile = {
 function Menu(props) {
   return (
 
-    <div className="w-full md:flex  flex-wrap lg:flex ">
+    <div className="w-full md:flex  flex-wrap lg:flex">
+
+      <div className="w-1/2 h-screen hidden lg:flex">
+        <div className="w-1/2 h-screen menuBackgroundImage overlfow-hidden fixed">
+
+        </div>
+      </div>
+
+      <div className="w-full lg:w-1/2 h-full bg-red-700 py-12 lg:mt-8  ">
+        <div className="w-full h-auto flex justify-center items-center">
+          <div className="flex-wrap w-full  lg:p-8">
+
+            <div className="h-64 w-full flex items-center lg:h-auto fixed lg:relative bg-red-700">
+              <div className="flex flex-wrap h-48 lg:h-auto items-center w-full justify-center py-4">
+
+                <div className="w-full flex justify-center h-auto lg:pt-24">
+                  <h1 className="w-48 lg:w-64 text-center text-4xl md:text-4xl lg:text-6xl khaya-font-bold text-white leading-none">Product Offering</h1>
+                </div>
+
+                <div className="w-full flex justify-center py-12 lg:py-16">
+                  <div className="w-auto flex">
+
+                    <div className="w-1/3 text-white flex mx-4">
+                      <div className="border p-2 px-4 w-auto hover:bg-white hover:text-red-700 cursor-pointer">Retail</div>
+                    </div>
+                    <div className="w-1/3 text-white flex mx-4">
+                      <div className="border p-2 px-4 w-auto hover:bg-white hover:text-red-700  cursor-pointer">Catering</div>
+                    </div>
+                    <div className="w-1/3 text-white flex mx-4 ">
+                      <div className="border p-2 px-4 w-auto hover:bg-white hover:text-red-700 cursor-pointer">Recipies</div>
+                    </div>
+
+                  </div>
 
 
-{/* background image */}
-    <div className="h-full md:h-auto md:w-full lg:w-full lg:h-auto lg:relative flex justify-center menuBackgroundImage" >
-    <div className="max-w-md h-screen items-center justify-center flex text-7xl lg:text-12xl text-white font-bold">
-  
-  <div className=" khaya-font-bold">
-  Menu
-  </div>
-  
-  </div>
+                </div>
+                <div className="w-full px-2 bg-red-700 lg:hidden">
+                <div className=" border-b-2"></div>
+                </div>
+               
+              </div>
 
-    </div>
-{/* background image */}
 
-  <div className="h-full w-screen flex lg:p-4">
-    
-  <div className=" w-0 bg-center md:h-auto md:h-full lg:w-1/3 lg:h-auto lg:relative items-center" style={mobile}>
-
-  </div>
-
-   
-  <div className="w-full md:w-full  lg:relative lg:w-2/3  rounded-t-lg shadow-md  md:shadow-none lg:shadow-none lg:rounded-none flex lg:items-center lg:justify-center p-4 ">
-      
-      <div className="grid grid-rows-auto lg:grid-cols-2  gap-2">
-
-        {foodMenu.Menu.map((menu, i) => (
-            // <div className="w-full md:w-1/2 lg:w-1/2 flex h-auto p-2">
-            <div className={"row-span-"+menu.Items.length+" col-span-1"}>
-            <div className="flex-wrap w-full">
-        <div className="bg-black text-white w-full p-4 text-center text-xl lg:text-xl font-bold">{menu.Name}</div>
-        {menu.Items.map((item, i)=>
-                 <div className="border-b-2 border-black flex-wrap p-4">
-                 <div className="font-semibold text-xl">{item.Name}</div>
-                 <p className="w-full flex my-2 text-sm lg:text-lg">{item.Description} </p>
-                 
-                 <div className="w-full flex my-2 font-semi-bold text-lg lg:text-xl items-end h-auto py-2">
-                 <div className="w-1/2">
-                   <p>{item.Price}</p>
-                 </div>
-                 <div className="w-1/2 flex justify-end">
-                   <a className="appearance-none" href="#">
-                   <img className="w-4" src={shareIcon}></img>
-                     </a>
-                 </div>
-               </div>
-               </div>
-        
-        
-        )}
-     
             </div>
+
+            <div className="p-4">
+              <div className="w-full  lg:border-t-4 mt-64 lg:mt-0  lg:py-4 ">
+
+                <div className="text-white flex-wrap">
+                  {foodMenu.Menu.map((menu, i) =>
+                  (<div className="my-2">
+                    <h2 key={menu.name} className="text-3xl khaya-font-bold">{menu.Name}</h2>
+                    {menu.Items.map((item, i) =>
+                      <div className="">+ {item.Name}</div>
+                    )}
+
+                  </div>)
+                  )}
+
+                </div>
+              </div>
+            </div>
+
+
           </div>
-            ))}
 
 
+        </div>
       </div>
 
     </div>
-  
-  </div>
-  </div>
   );
 }
 

@@ -1,69 +1,63 @@
 {
     "Menu": [
         {
-            "Name": "Dombolo",
+            "Name": "South African Foods - Beef Stew",
             "Items": [
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": "Beef stew; samp and beans; Stewed spinach"
                 },
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": "Beef stew; Pap; Stewed spinach "
                 },
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": "Beef Stew; Pap"
+                },
+                {
+                    "Name": " Beef stew; Samp and beans"
+                },
+                {
+                    "Name": "Beef cheek ragu stuffed bread "
+                },
+                {
+                    "Name": " Beef stew "
                 }
+        
             ]
         },
         {
-            "Name": "Curried",
+            "Name": "South African Foods - Umleqwa Coq Au Vin",
             "Items": [
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": "Umleqwa Coq Au Vin; Samp and beans"
                 },
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": "Umleqwa Coq Au Vin; Pap"
+                },
+                {
+                    "Name": "Umleqwa Coq Au Vin; Mashed Potato"
+                },
+                {
+                    "Name": "Umleqwa Coq Au Vin"
                 }
+
             ]
-        },
+        }
+
+        ,
         {
-            "Name": "Pasta",
+            "Name": "South African Foods - Braised Lamb Shank",
             "Items": [
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": " Braised Lamb Shank; Mashed Potato"
                 },
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
-                }
-            ]
-        },
-        {
-            "Name": "Veg",
-            "Items": [
-                {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": "Braised Lamb Shank; Curried Samp "
                 },
                 {
-                    "Name": "Stuffed Tripe Dombolo",
-                    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum-my nibh euLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ",
-                    "Price": "R200"
+                    "Name": "Braised Lamb Shank"
                 }
             ]
         }
+        
     ]
 }

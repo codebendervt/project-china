@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import React, { useEffect, useReducer,useState } from "react";
 import menu from "./icons/menu.svg";
 import IconButton from "./buttons/icon";
 import LinkButton from "./buttons/linkbutton";
@@ -46,12 +46,14 @@ function reducer(state, action) {
       };
     case "Gallery":
       return { Title: action.type, child: gallery, counter: 1 };
-    case "Menu":
+    case "Product Offering":
       return { Title: action.type, child: foodMenu, counter: 1 };
     case "Connect With Us":
       return { Title: action.type, child: connect, counter: 1 };
     case "reset":
       return init(action.payload);
+    case "mobileSpash":
+        return {property:true, child: state.child, counter: 1};
     default:
       return { Title: "404", child: fouroFour, counter: 1 };
   }
@@ -60,12 +62,17 @@ function reducer(state, action) {
 
 function ClassicAppLayout({ Subtitle = "Home", children, initialState }) {
   const [isClicked, changeIsClicked] = useReducer(reducer, initialState, init);
-  // const [isLinkClicked, changeIsLinkClicked] = useReducer(
-  //   reducer,
-  //   initialState,
-  //   init
-  // );
+  const [matches] = useState(window.matchMedia("(max-width: 768px)").matches);
 
+  useEffect(() => {    
+    
+    if(matches){
+      changeIsClicked({type:"mobileSpash"})
+    }
+  
+
+   },[]);
+  
   const classicMenu = () => {
     return (
       <div
@@ -103,7 +110,7 @@ function ClassicAppLayout({ Subtitle = "Home", children, initialState }) {
   };
   return (
     <>
-      <div className="w-full h-16 lg:h-24 bg-white flex  text-2xl z-20 fixed pin-t">
+      <div className={"app w-full h-16 lg:h-24 bg-white fixed flex text-2xl z-20  pin-t" + (isClicked.child == splash ? " transition-opacity duration-500 ease-in-out opacity-25 hover:opacity-100": "")}>
         <div className="w-1/2 p-2 ">
           <div className={"flex h-full items-center justify-start"}>
             <IconButton

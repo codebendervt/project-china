@@ -4,7 +4,7 @@ import logo from "./icons/logo.svg";
 
 function App() {
   return (
-    <div className="w-screen h-full lg:h-screen lg:overflow-x-hidden  ">
+    <div className=" w-screen h-full lg:h-screen lg:overflow-x-hidden app">
       <div className="flex-wrap h-full">
         <ClassicAppLayout Subtitle={logo}>
  

@@ -9,15 +9,62 @@
 
 @tailwind components;
 
+
+  
 .html{
     font-family: 'Montserrat', sans-serif;
+
 }
+
+.app::-webkit-scrollbar{
+  display: none;
+}
+
+.app{
+  scrollbar-width: none;  /* Firefox */
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides > div:target {
+  /* transform: scale(0.8);  */
+}
+
 /* .font-bold{
     font-family: 'Montserrat', sans-serif;
 } */
 .rotate {
     animation: rotation 2s infinite linear;
   }
+
+
 
        
   @font-face {
@@ -61,6 +108,14 @@
       line-height: 6rem;
     }
 
+    .myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    
  
 
 
@@ -76,7 +131,7 @@
   .menuBackgroundImage{
     background-image: url('./images/mobileMenuAlt.jpg');
    
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
   }
 
@@ -104,3 +159,8 @@
 }
 
 @tailwind utilities;
+
+
+
+
+/* https://css-tricks.com/css-only-carousel/ */
