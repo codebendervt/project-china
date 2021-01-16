@@ -7,7 +7,7 @@ import checkedOriginal from "../icons/checkedOrginal.svg";
 
 // important for controller states
 function init(initialState) {
-  return { property: false};
+  return { property: false };
 };
 
 
@@ -24,9 +24,9 @@ function reducer(state, action) {
 //end of controller state
 
 function Connect(initialState) {
-  const [isClicked, changeIsClicked] = useReducer(reducer, initialState,init);
+  const [isClicked, changeIsClicked] = useReducer(reducer, initialState, init);
   return (
-    <div className=" w-screen h-full lg:h-screen bg-white">
+    <div className=" w-screen h-full lg:h-full bg-white">
       <div className="w-full h-32 flex-wrap lg:flex lg:py-32">
         <div className="p-8 w-full lg:w-1/2 lg:py-6 lg:px-16 ">
           <div className="text-6xl lg:text-10xl w-52 heading-leading khaya-font-bold">
@@ -94,12 +94,27 @@ function Connect(initialState) {
               </div>
 
               <div className="flex-wrap w-full py-2">
-                <div className="title  text-lg lg:text-2xl">
-                  Baarken valley 31
+                <div className="title  flex-col text-lg lg:text-2xl">
+                  <p>
+                  20 Horton Street
+                  </p>
+                  <p>
+                  Baakensvalley
+                  </p>
+                  <p>
+                  South End
+                  </p>
+                  <p>
+                  Port Elizabeth
+                  </p>
+                  <p>
+                  6000
+                  </p>
+               
                 </div>
-                <div className="title  text-lg lg:text-2xl">
+                <a href="https://goo.gl/maps/QRoArdiyZUnhhtAZ6" className="title  text-lg lg:text-2xl">
                   Google maps --->
-                </div>
+                </a>
               </div>
             </div>
 
@@ -109,20 +124,20 @@ function Connect(initialState) {
               </div>
 
               <div className="justify-center flex w-full">
-              <div className="flex-wrap w-full  py-2">
-                <div className="flex items-end text-xl my-1">
-                  <img className="w-8" src={instagram}></img>
-                  <div>@KhayaKitchen</div>
+                <div className="flex-wrap w-full  py-2">
+                  <div className="flex items-end text-xl my-1">
+                    <img className="w-8" src={instagram}></img>
+                    <div>@KhayaKitchen</div>
+                  </div>
+                  <div className="flex items-end text-xl my-1">
+                    <img className="w-8" src={facebook}></img>
+                    <div>@KhayaKitchen</div>
+                  </div>
                 </div>
-                <div className="flex items-end text-xl my-1">
-                  <img className="w-8" src={facebook}></img>
-                  <div>@KhayaKitchen</div>
-                </div>
+
               </div>
-            
-              </div>
-            
-            
+
+
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3 h-full my-4 lg:my-0">

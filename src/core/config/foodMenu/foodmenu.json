@@ -1,63 +1,236 @@
 {
-    "Menu": [
-        {
-            "Name": "South African Foods - Beef Stew",
-            "Items": [
+    "Menu": {
+        "Everyday": {
+            "Name": "Everyday Meals",
+            "List": [
                 {
-                    "Name": "Beef stew; samp and beans; Stewed spinach"
+                    "Name": "Beef Stew",
+                    "Items": [
+                        {
+                            "Name": "Stewed spinach & samp and beans"
+                        },
+                        {
+                            "Name": "Pap & Stewed spinach"
+                        },
+                        {
+                            "Name": " Pap; Stewed spinach"
+                        }
+                    ]
                 },
                 {
-                    "Name": "Beef stew; Pap; Stewed spinach "
+                    "Name": "Beef cheek ragu stuffed bread",
+                    "Items": []
                 },
                 {
-                    "Name": "Beef Stew; Pap"
+                    "Name": "Umleqwa Coq Au Vin",
+                    "Items": [
+                        {
+                            "Name": " Samp and beans"
+                        },
+                        {
+                            "Name": "Pap"
+                        },
+                        {
+                            "Name": " Mashed Potato"
+                        }
+                    ]
                 },
                 {
-                    "Name": " Beef stew; Samp and beans"
+                    "Name": "Braised Lamb Shank",
+                    "Items": [
+                        {
+                            "Name": "Curried Samp"
+                        },
+                        {
+                            "Name": "Mashed Potato"
+                        }
+                    ]
                 },
                 {
-                    "Name": "Beef cheek ragu stuffed bread "
+                    "Name": "Lamb Stew",
+                    "Items": [
+                        {
+                            "Name": "Curried Samp & Chakalaka"
+                        },
+                        {
+                            "Name": "Pap & Carrots"
+                        },
+                        {
+                            "Name": "Curried Samp"
+                        },
+                        {
+                            "Name": "Pap"
+                        }
+                    ]
                 },
                 {
-                    "Name": " Beef stew "
+                    "Name": "Lamb Curry Bread Bowl",
+                    "Items": []
+                },
+                {
+                    "Name": "Lamb Curry",
+                    "Items": [
+                        {
+                            "Name": "Pap"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Chicken Curry",
+                    "Items": [
+                        {
+                            "Name": "Dumpling"
+                        },
+                        {
+                            "Name": "Stuffed Bread"
+                        },
+                        {
+                            "Name": "Pap"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Braised Oxtail",
+                    "Items": [
+                        {
+                            "Name": "Butternut"
+                        },
+                        {
+                            "Name": " Mashed Potato"
+                        }
+                    ]
+                },
+                {
+                    "Name": "West African Peanut Chicken Stew",
+                    "Items": [
+                        {
+                            "Name": "Curried Samp"
+                        },
+                        {
+                            "Name": " Pap"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Braised Tripe",
+                    "Items": [
+                        {
+                            "Name": "Curried Samp & Chakalaka"
+                        },
+                        {
+                            "Name": "Dumplings & Stewed Spinach"
+                        },
+                        {
+                            "Name": "Dumplings"
+                        },
+                        {
+                            "Name": "Stuffed Bread"
+                        }
+                    ]
                 }
-        
+            ],
+            "Sub": [
+                {
+                    "Name": "Vegetables",
+                    "List": [
+                        "Mashed Potato",
+                        "Grilled Butternut",
+                        "Chakalaka",
+                        "Stewed Spinach"
+                    ],
+                    "Secondary": {
+                        "Name": "Salads",
+                        "List": [
+                            "Butternut-Beetroot; rocket; Feta"
+                        ]
+                    }
+                },
+                {
+                    "Name": "Starches",
+                    "List": [
+                        "Curried Samp",
+                        "Samp and Beans",
+                        "Pap",
+                        "Dumplings"
+                    ],
+                    "Secondary": {
+                        "Name": "",
+                        "List": []
+                    }
+                },
+                {
+                    "Name": "Cocktails",
+                    "List": [
+                        "Chicken Feet",
+                        "Chicken Wings",
+                        "Spicy Chicken Liver",
+                        "Dumplings"
+                    ],
+                    "Secondary": {
+                        "Name": "Vetkoek",
+                        "List": [
+                            "Chicken Curry",
+                            "Chicken livers",
+                            "Lamb Curry",
+                            "Meatballs"
+                        ]
+                    }
+                },
+                {
+                    "Name": "Pastas",
+                    "List": [],
+                    "Secondary": {
+                        "Name": "Pappardelle",
+                        "List": [
+                            "Beef cheek Ragu",
+                            "Meatballs",
+                            "Spicy Chicken livers"
+                        ]
+                    }
+                }
             ]
         },
-        {
-            "Name": "South African Foods - Umleqwa Coq Au Vin",
-            "Items": [
+        "Festive": {
+            "Name": "Festive Meals",
+            "List": [
                 {
-                    "Name": "Umleqwa Coq Au Vin; Samp and beans"
+                    "Name": "Sous Vide Balsamic Glazed Gammon",
+                    "Items": []
                 },
                 {
-                    "Name": "Umleqwa Coq Au Vin; Pap"
+                    "Name": "Pearl Barley",
+                    "Items": [
+                        {
+                            "Name": " Mushroom Risotto"
+                        }
+                    ]
                 },
                 {
-                    "Name": "Umleqwa Coq Au Vin; Mashed Potato"
+                    "Name": "Confit Pork Belly",
+                    "Items": [
+                        {
+                            "Name": "Roast Apples"
+                        }
+                    ]
                 },
                 {
-                    "Name": "Umleqwa Coq Au Vin"
+                    "Name": "Honey Glazed Hasselbeck Butternut",
+                    "Items": []
+                },
+                {
+                    "Name": "Hidden Orange Christmas Pudding",
+                    "Items": []
+                },
+                {
+                    "Name": "Sous Vide Roast Leg Of Lamb",
+                    "Items": []
+                },
+                {
+                    "Name": "Spinach And Feta Stuffed Roast Chicken",
+                    "Items": []
                 }
-
-            ]
+            ],
+            "Sub": []
         }
-
-        ,
-        {
-            "Name": "South African Foods - Braised Lamb Shank",
-            "Items": [
-                {
-                    "Name": " Braised Lamb Shank; Mashed Potato"
-                },
-                {
-                    "Name": "Braised Lamb Shank; Curried Samp "
-                },
-                {
-                    "Name": "Braised Lamb Shank"
-                }
-            ]
-        }
-        
-    ]
+    }
 }

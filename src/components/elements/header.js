@@ -85,7 +85,7 @@ function ClassicAppLayout({ Subtitle = "Home", children, initialState }) {
           <div className="flex-wrap my-16 ">
             {theMenu.appMenu.map((menu, i) => (
               <LinkButton
-                key={i}
+                key={menu.title}
                 icon={i}
                 value={isClicked}
                 text={menu.title}
@@ -96,8 +96,8 @@ function ClassicAppLayout({ Subtitle = "Home", children, initialState }) {
         </div>
         <div className="w-full h-auto md:h-48 lg:h-48 bg-red-700 p-6 lg:py-8 lg:px-16 text-white font-bold flex text-sm md:text-lg lg:text-sm  ">
           <div className="flex-wrap">
-            <div className=""> 61 Amery Crescent , Summerstrand,</div>
-            <div className=""> Port Elizabeth, South Afrrica</div>
+            <div className=""> 20 Horton Street Baakensvalley South End </div>
+            <div className=""> Port Elizabeth 6000, South Afrrica</div>
 
             <div className="flex my-4">
               <img className="w-8 md:w-12 lg:w-12 lg:my-4" src={facebook}></img>

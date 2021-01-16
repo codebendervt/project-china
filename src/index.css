@@ -11,9 +11,17 @@
 
 
   
-.html{
+html{
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    
 
+}
+
+body{
+  @apply bg-red-700; 
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth; 
 }
 
 .app::-webkit-scrollbar{
@@ -164,12 +172,23 @@
   .menuBackgroundImage{
     background-image: url('./images/menu.jpg');
   }
+
+  body{
+    @apply bg-white; 
+
+  }
  }
+
 
 /* Extra Large (xl) */
 @media (min-width: 1280px) { 
   .menuBackgroundImage{
     background-image: url('./images/menu.jpg');
+  }
+
+  body{
+    @apply bg-white; 
+
   }
 }
 
