@@ -26,19 +26,19 @@ function reducer(state, action) {
 function Connect(initialState) {
   const [isClicked, changeIsClicked] = useReducer(reducer, initialState, init);
   return (
-    <div className=" w-screen h-full lg:h-full bg-white">
-      <div className="w-full h-32 flex-wrap lg:flex lg:py-32">
-        <div className="p-8 w-full lg:w-1/2 lg:py-6 lg:px-16 ">
-          <div className="text-6xl lg:text-10xl w-52 heading-leading khaya-font-bold">
+    <div className="w-screen h-full lg:h-full bg-white relative">
+      <div className="w-full bg-white py-6 h-32 flex-wrap lg:flex lg:py-32">
+        <div className="p-8 bg-white w-full lg:w-1/2 lg:py-6 lg:px-16 ">
+          <div className="text-6xl lg:text-10xl w-52 leading-none heading-leading khaya-font-bold">
             Connect <br /> with us
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2">
+        <div className="w-full  lg:w-1/2">
           <div className="lg:text-8xl w-52"></div>
         </div>
 
-        <div className="w-full p-8  lg:p-16 lg:my-16  flex-wrap md:flex lg:flex items-center">
+        <div className="w-full bg-white p-8  lg:p-16 lg:my-16  flex-wrap md:flex lg:flex items-center">
           <div className="w-full md:w-1/2 lg:w-1/3 flex-wrap h-full">
             <div className="flex-wrap">
               <div className="text-4xl md:text-5xl lg:text-5xl font-bold  flex">

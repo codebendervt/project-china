@@ -29,7 +29,7 @@ function Menu(props) {
     return (
       <div className="text-white flex-wrap">
         {foodMenu.Menu[menu].Sub.map((menu, i) =>
-        (<div key={i + menu.Name} className="">
+        (<div key={i + menu.Name} className="mt-12 lg:mt-0">
 
 
           {
