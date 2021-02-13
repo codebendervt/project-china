@@ -1,0 +1,8 @@
+[submodule "core"]
+	path = library/core
+	url = https://github.com/sauveurXrawk/stunning-octo-goggles.git
+
+
+[submodule "components"]
+	path = library/components
+	url  = https://github.com/sauveurXrawk/bookish-octo-memory.git
