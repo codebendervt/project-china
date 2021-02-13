@@ -21,3 +21,9 @@ To get run the project run
 # Using npm
 npm start
 ```
+
+
+
+# Update notes
+have updated to parcel v2 and tailwind 2, will need to check for postcss 8 support soon
+

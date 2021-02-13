@@ -1,13 +1,13 @@
 {
   "name": "project-china",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the toolchain china that will enable the use of tailwindcss, reactjs and many other uselful tools and technologies that will help with the developing of the toolbox",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel  ./public/index.html",
+    "start": "parcel serve  ./public/index.html",
     "build": "parcel build ./public/index.html  --public-url ./",
-    "rstart": "react-scripts start"
+    "react": "react-scripts start"
   },
   "repository": {
     "type": "git",
@@ -26,18 +26,23 @@
   },
   "homepage": "https://github.com/devUniversity/project-china#readme",
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "tailwindcss": "^1.4.6"
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
-    "@babel/preset-react": "^7.10.1",
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "parcel-bundler": "^1.12.4"
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-transform-react-jsx": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "parcel": "^2.0.0-beta.1",
+    "postcss-cli": "^8.3.1"
   },
   "browserslist": {
     "production": [
