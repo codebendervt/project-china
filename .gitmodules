@@ -2,6 +2,9 @@
 	path = library/core
 	url = https://github.com/sauveurXrawk/stunning-octo-goggles.git
 
+[submodule "api"]
+	path = library/api
+	url  = https://github.com/sauveurXrawk/miniature-parakeet.git
 
 [submodule "components"]
 	path = library/components
